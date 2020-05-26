@@ -1,0 +1,18 @@
+# type Subscription {
+# 	postAdded: Post
+# }
+
+
+type Post {
+	author: String
+	comment: String
+}
+
+
+type Query {
+	posts: [Post]
+}
+
+type Mutation {
+	addPost(author: String, comment: String): Post
+}
